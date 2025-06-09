@@ -52,13 +52,12 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 30px;
+
 }
 
 .hero h1 {
   font-size: 6rem;
   color: var(--text-primary);
-  margin-left: 6rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -70,13 +69,11 @@ html {
 .hero p {
   font-size: 3rem;
   color: var(--text-primary);
-  margin-left: 6rem;
   margin-top: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn-hero {
-  margin-left: 6rem;
   margin-top: 2rem;
   padding: 1rem 2rem;
   border: none;
@@ -91,4 +88,44 @@ html {
   border: 1px solid var(--text-primary);
   color: var(--text-primary);
   font-weight: bold;
+}
+sec
+
+/* main */
+.display-title {
+  font-size: 4.5rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-main {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--golden);
+  color: var(--primary-color);
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-main:hover {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+
+.banner {
+  margin: 6rem 3rem;
+  width: 80%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+@media (max-width: 768px) {
+  .banner{
+    width: 100%;
+    margin: 1rem auto;
+  }
 }

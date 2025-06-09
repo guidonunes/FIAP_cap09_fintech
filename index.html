@@ -11,16 +11,24 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <!--header-->
+    <!---Navbar-->
     <header>
       <nav
         class="navbar navbar-expand-lg bg-dark p-4 fs-2"
         data-bs-theme="dark"
       >
-        <div class="container-fluid mx-5">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="/img/logo.png" alt="upside logo" class="logo" />
           </a>
@@ -36,10 +44,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto p-2">
-              <a class="nav-link" aria-current="page" href="#">Início</a>
-              <a class="nav-link" href="#">Sobre</a>
-              <a class="nav-link" href="#">Entrar</a>
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link mx-4" aria-current="page" href="#">Início</a>
+              <a class="nav-link mx-4" href="#">Sobre</a>
+              <a class="nav-link mx-4" href="#">Entrar</a>
               <button class="btn btn-nav px-3 fs-2" type="button">
                 Cadastrar
               </button>
@@ -48,38 +56,61 @@
         </div>
       </nav>
     </header>
-    <!--header end-->
+    <!--Navbar End-->
 
-    <!--hero-->
+    <!-- Hero -->
     <section class="hero mb-5">
-      <h1>Sua <span>independência financeira</span> começa aqui</h1>
-      <p>Comece agora mesmo a cuidar melhor do seu dinheiro</p>
-      <button type="button" class="btn btn-hero">Crie sua conta</button>
+      <div class="container">
+        <h1>Sua <span>independência financeira</span> começa aqui</h1>
+        <p>Comece agora mesmo a cuidar melhor do seu dinheiro</p>
+        <button type="button" class="btn btn-hero">Crie sua conta</button>
+      </div>
     </section>
-    <!--hero end-->
+    <!-- Hero End -->
 
-    <div class="container mt-5">
-      <div class="row">
+    <!--main-->
+    <div class="container">
+      <div class="row d-flex align-items-center">
         <div class="col-md-6">
-          <h2 class="text-center fs-1">Controle seus gastos sem complicações</h2>
-          <p>
-            Organize todas as suas despesas e receitas em um único lugar. O Upside foi desenvolvido para ser simples e intuitivo, permitindo que você foque no que realmente importa: alcançar seus objetivos financeiros.
+          <h2 class ="fs-1 fw-bold mb-3 display-title">
+            Controle seus gastos sem complicações
+          </h2>
+          <p class="fs-2 my-5">
+            Organize todas as suas despesas e receitas em um único lugar. O
+            Upside foi desenvolvido para ser simples e intuitivo, permitindo que
+            você foque no que realmente importa: alcançar seus objetivos
+            financeiros.
           </p>
 
-          <h3>Suba de nível e torne-se um mestre do planejamento</h3>
-          <p>Alcance seus objetivos financeiro e avance em direção aos seus sonhos com a nossa mecânica de gamificação.</p>
-          <hr>
-          <h3>Suba de nível e torne-se um mestre do planejamento</h3>
-          <p>Alcance seus objetivos financeiro e avance em direção aos seus sonhos com a nossa mecânica de gamificação.</p>
+          <div class="d-flex flex-row">
+            <i class="fa-solid fa-gamepad fs-1 me-3"></i>
+            <h3 class="fs-1 fw-bold mb-3">
+              Suba de nível e torne-se um mestre do planejamento
+            </h3>
+          </div>
+          <p class="fs-2">
+            Alcance seus objetivos financeiro e avance em direção aos seus
+            sonhos com a nossa mecânica de gamificação.
+          </p>
+          <hr />
+          <div class="d-flex flex-row">
+            <i class="fa-solid fa-robot fs-1 me-3"></i>
+            <h3 class="fs-1 fw-bold mb-3">
+              Recomendações e sugestões personalizadas
+            </h3>
+          </div>
+          <p class="fs-2">
+            Tire suas dúvidas e ganhe novos insights com a nossa inteligência
+            artificial integrada.
+          </p>
+          <button class="btn btn-main my-5 px-5 fs-2" type="button">Comece já</button>
         </div>
         <div class="col-md-6">
-          <img src="/img/main.jpg" alt="Imagem do Upside" class="img-fluid" />
+          <img src="/img/main.jpg" alt="Imagem do Upside" class="img-fluid rounded-4 banner" />
         </div>
       </div>
-
     </div>
-
-
+    <!--main end-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
